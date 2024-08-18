@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+    <header class="header">
+        <span class="header__title">Lorem Ipsum</span>
+    </header>
+    <main class="container">
+        <div class="card_container">
+            <div class="card">
+                <div class="card__front">
+                    <div class="card__header">
+                        <span class="card__title">BANK</span>
+                    </div>
+                    <div class="card_info">
+                        <div class="card__chip"><img src="images/card_chip.png" alt=""></div>
+                        <div class="card__number">
+                            <span>XXXX XXXX XXXX XXXX</span>
+                        </div>
+                    <div class="card__expiration-date">XX/XX</div>
+                    <span class="card__name">AAAAAA AAAAA AAAAAAA</span>
+                    </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__black-bar"></div>
+                    <div class="card__cod-container">
+                        <span class="card__cod">XXX</span>
+                    </div>
+                    <div class="card__lorem"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, cupiditate. Laboriosam nemo ipsa exercitationem quis eum expedita dicta excepturi sequi mollitia consequatur a eveniet, blanditiis commodi officiis, fugit similique odit.</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="form__container">
+            <h1>Payment Details</h1>
+            <form action="#">
+                <input type="text" id="card_number" placeholder="CARD NUMBER">
+                <input type="text" maxlength="25" id="card_name" placeholder="CARDHOLDER NAME">
+                <div class="form__input-divisor">
+                    <input type="text" maxlength="2" id="card_exp-month" placeholder="12">
+                    <input type="text" maxlength="4" id="card_exp-year" placeholder="2028">
+                    <input type="text" maxlength="3" id="card_code" placeholder="CVV">
+                </div>
+                <div class="form__actions">
+                    <input type="submit" value="CONFIRM PAY" id="submit">
+                    <input type="reset" value="CANCEL" id="reset">
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+
+    <script src="validations.js"></script>
+    <script src="card.js"></script>
+</body>
+</html>
